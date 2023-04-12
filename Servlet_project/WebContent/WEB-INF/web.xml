@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Jspdemo</display-name>
+  
+  <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>com.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern>/servletdemo</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>second</servlet-name>
+  <servlet-class>com.generic_servlet.MyGenericServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>second</servlet-name>
+  <url-pattern>/servlet2demo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>third</servlet-name>
+  <servlet-class>com.httpservlet.MyHttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>third</servlet-name>
+  <url-pattern>/servlet3</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
